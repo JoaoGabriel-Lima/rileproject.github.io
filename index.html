@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Rile | Login</title>
+        <meta charset="utf-8"/>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/fonts/Teste/stylesheet.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <script src="jquery-2.1.4.js"></script>
+    </head>
+    <body>
+        <div class="wave_box"><img src="/img/wave.png" alt=""></div>
+        <div class="login_part">
+            <h1 class="login_title">Faça Login</h1>
+            <form id="form_login" action="#">
+                <div class="icon_mail">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Endereço de Email"><br><br>
+                </div>
+                <div class="icon_lock">
+                    <i class="fas fa-lock color"></i>
+                <input type="password" id="password" name="password" placeholder="Senha"><br><br>
+                </div>
+                <input type="submit" class="btn_login" value="Login">
+            </form>
+            <div id="div_white_parte">
+                <h2>Esqueceu a <b>senha?</b> - Ainda não possui uma conta?</h2>
+            </div>
+        </div>
+
+        <div class="colorful_part">
+            <div class="div_logo">
+                <a href="#" class="logo">Rile</a>
+                <hr class="new1">
+                <div class="lines">
+                <hr class="div_lines">
+                <hr class="div_lines">
+                <hr class="div_lines">
+                <hr class="div_lines">
+                </div>
+                <h3 class="welcome">Welcome Back</h3>
+            </div>
+            <h4 class="social-media"><a>TWITTER</a></h4>
+            <h4 class="social-media1"><a>FACEBOOK</a></h4>
+            <h4 class="social-media2"><a>YOUTUBE</a></h4>
+            <hr class="design_line">
+            <hr class="design_line2">
+            <h4 id="num">01 - 08</h4>
+           <!--- <img src="https://picsum.photos/300/300/?random" />
+        </div>
+        <!---<div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>---->
+        <div class="loader">
+            <img id="carregando" src="/img/loading.gif" alt="Entrando no Rile"/>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("load", function () {
+                const loader = document.querySelector(".loader");
+                loader.className += " hidden"; // class "loader hidden"
+            });
+
+
+            $(document).ready(function() {
+                $(".btn_login").click(function(){
+                    $(this).addClass("active");
+
+                // Add Success Class After 3.7 Seconds
+                setTimeout(function(){
+                    $(".btn_login").addClass("success");
+                }, 3700);
+                });
+            });
+        </script>
+    </body>
+</html>

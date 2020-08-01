@@ -1,0 +1,455 @@
+*{
+    padding: 0;
+    margin: 0px;
+    overflow: hidden
+}
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #F9F9F9;
+}
+
+.wave_box img{
+    width: 100%;
+    position: absolute;
+    z-index: 11;
+    -webkit-filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.24));
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.24));
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    z-index: 999;
+  }
+  .loader {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 350px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.login_part {
+    z-index: 5;
+    position: relative;
+    float: left;
+    background-color: #F9F9F9;
+    background-image: url(/img/gradient_dots.png);
+    height: 100vh;
+    width: 58%;
+    padding: 0;
+    margin: 0px;
+}
+
+.colorful_part {
+    z-index: 10;
+    box-shadow: -5px 0px 8px rgba(0, 0, 0, 0.14);
+    position: relative;
+    float: right;
+    background-image: url(/img/color.jpg);
+    background-size: 100% 100%;
+    margin: 0;
+    height: 100vh;
+    width: 42%;
+}
+
+.login_title {
+    position: relative;
+    margin-top: 150px;
+    font-size: 45px;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    background: linear-gradient(to right, #F20C75 50%, #FD4B50 60%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.div_logo {
+    height: 400px;
+}
+
+.logo {
+    z-index: 9999;
+    text-decoration: none;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    position: relative;
+    top: 150px;
+    float: right;
+    margin-right: 80px;
+    font-size: 140px;
+    color: white;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.logo:hover {
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+hr.new1 {
+    z-index: 50;
+    margin-top: 296px;
+    border: 4px solid white;
+    border-radius: 0px;
+    margin-left: 65px;
+    margin-right: 80px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft{
+    0% {
+        margin-right: 400px;
+      }
+      100% {
+        margin-right: 80px;
+      }
+}
+
+hr.div_lines {
+    border: 4px solid white;
+    border-radius: 0px;
+    margin-left: 65px;
+    margin-right: 320px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: white;
+}
+hr.design_line2 {
+    width: 17.5%;
+    margin-left: 65px;
+    border: 2px solid #FF5858;
+    background-color: #FF5858;
+    opacity: 0.16;
+    position: absolute;
+    bottom: 30px;
+}
+
+hr.design_line {
+    width: 44%;
+    margin-left: 170px;
+    margin-right: 149px;
+    border: 2px solid white;
+    background-color: white;
+    opacity: 0.16;
+    position: absolute;
+    bottom: 30px;
+}
+
+.lines {
+    position: relative;
+    bottom: 119px;
+}
+
+.welcome {
+    z-index: 9999;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    position: relative;
+    margin-left: 65px;
+    bottom: 100px;
+    letter-spacing: 5px;
+    transition: 1;
+    animation: 1s ease-out 0s 1 teste;
+}
+
+@keyframes teste {
+    0% {
+        letter-spacing: 0.5em;
+    }
+    100% {
+        letter-spacing: 5px;
+    }
+}
+
+.social-media {
+    z-index: 9999;
+    transform: rotate(-90deg);
+    font-family: "SF Pro Display";
+    font-weight: Bold;
+    position: absolute;
+    overflow: visible;
+    width: 298px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transform-origin: center;
+    right: -90px;
+    bottom: 170px;
+    
+}
+.social-media1 {
+    z-index: 9999;
+    transform: rotate(-90deg);
+    font-family: "SF Pro Display";
+    font-weight: Bold;
+    position: absolute;
+    overflow: visible;
+    width: 298px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transform-origin: center;
+    right: -90px;
+    bottom: 243px;
+}
+
+.social-media2 :hover {
+    color: #4e0b07;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.social-media1 :hover {
+    color: #577ca7;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.social-media :hover {
+    color: #80cee1;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.social-media2 {
+    z-index: 9999;
+    transform: rotate(-90deg);
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    position: absolute;
+    overflow: visible;
+    width: 298px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transform-origin: center;
+    right: -90px;
+    bottom: 330px;
+}
+
+#num {
+    color: white;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    font-size: 7px;
+    position: absolute;
+    bottom: 27.5px;
+    right: 113px;
+}
+
+#email {
+    width: 44%;
+    height: 55px;
+    padding: 0px 8%;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    left: 650px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    transition: 0.5;
+}
+
+#email:focus {
+    transition: 0.5s;
+    width: 49%;
+}
+
+#email:not(:focus) {
+    transition: 0.5s;
+    width: 44%;
+}
+
+
+#password {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    width: 44%;
+    height: 55px;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    left: 650px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    background: #fff;
+    padding: 0px 8%;
+}
+
+#password:focus {
+    transition: 0.5s;
+    width: 49%;
+}
+
+#password:not(:focus) {
+    transition: 0.5s;
+    width: 44%;
+}
+
+::placeholder {
+    font-size: 16px;
+    opacity: 0.53;
+    letter-spacing: 2px;
+}
+
+*:focus {
+    outline: none;
+}
+
+#form_login {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.btn_login {
+    z-index: 99999;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 15.5vh;
+    font-family: "SF Pro Display";
+    font-weight: 500;
+    border: none;
+    width: 28%;
+    height: 52px;
+    color: white;
+    border-radius: 41.5px;
+    background: linear-gradient(#fd4b50 0%, #f20c75 100%);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all ease 0.5s;
+    animation: 1s ease-out 0s 1 btnanimation;
+}
+
+@keyframes btnanimation {
+    0% {
+        width: 10%;
+    }
+    100% {
+        width: 28%;
+    }
+}
+
+.btn_login:hover {
+    border-radius: 19px;
+}
+
+.active {
+    border: 3px solid rgb(255, 255, 255);
+    background: linear-gradient(#fd4b50 0%, #f20c75 100%);
+    line-height: 56px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: rotate 1.4s ease 0.5s infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+.success {
+    content: "";
+    position: relative;
+    animation: bounce .3s ease-in;
+    background-color: #FFF;
+    border: 3px solid #fff;
+    background: url(/img/check.svg) no-repeat;
+    background-size: 30px;
+    background-position: center;
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(0.9);
+    }
+}
+
+.success:before{
+    content: '';
+    position: absolute;
+    background: url(check-solid.svg) no-repeat; /* Check Solid is fontawesome icon */
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    top: 8px;
+}
+
+#div_white_parte {
+    width: 100%;
+    height: 17.5vh;
+    background: #fff;
+    box-shadow: 0px -3px 16px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    line-height: 17.5vh;
+}
+
+#div_white_parte h2 {
+    color: #363636;
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.72;
+    vertical-align: middle;
+}
+
+.icon_lock i{
+    opacity: 0.4;
+    position: absolute;
+    margin-top: 18px;
+    font-size: 20px;
+    margin-left: 29px;
+}
+
+.icon_mail i{
+    opacity: 0.4;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 29px;
+    margin-top: 18px;
+}
+
